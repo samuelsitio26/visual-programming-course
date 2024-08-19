@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 04:18:26 PM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0wMTsxMDoyNjo0MSBBTTszNjc0"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0wMTswMjozODoyMCBQTTsyO1BlcnNvbmFsO0RFU0tUT1AtT1ZQMDhWTTsyMDIxLTExLTE3OzAyOjIzOjUyIFBNO1QwNiByZWFsLmZwcmc7ODIzNg=="/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0wMjswNDoxODoyNiBQTTs0OzM4MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="posisi" type="Integer" array="False" size=""/>
+            <assign variable="posisi" expression="0"/>
+            <declare name="huruf" type="String" array="False" size=""/>
+            <input variable="huruf"/>
+            <output expression="proses1(huruf,posisi)" newline="True"/>
+        </body>
+    </function>
+    <function name="proses1" type="String" variable="hasil">
+        <parameters>
+            <parameter name="huruf" type="String" array="False"/>
+            <parameter name="posisi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hasil" type="String" array="False" size=""/>
+            <declare name="palindrom" type="Boolean" array="False" size=""/>
+            <assign variable="palindrom" expression="true"/>
+            <while expression="posisi&lt;=len(huruf)/2-1 and palindrom=true">
+                <if expression="char(huruf,posisi) &lt;&gt; char(huruf,len(huruf)-posisi-1)">
+                    <then>
+                        <assign variable="palindrom" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="posisi" expression="posisi+1"/>
+            </while>
+            <if expression="palindrom=true">
+                <then>
+                    <assign variable="hasil" expression="&quot;YES&quot;"/>
+                </then>
+                <else>
+                    <assign variable="hasil" expression="&quot;NO&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
