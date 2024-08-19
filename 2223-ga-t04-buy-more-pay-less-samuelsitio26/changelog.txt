@@ -1,0 +1,6 @@
+Telah menyelesaikan masalah
+Telah memperbaiki error pada penjumlahan
+Telah mengatasi error pada deklarasi yang salah
+Memperbaiki error yang ke 5 
+Mencoba menganalisis error yang ke 8
+Memperbaiki baris yang salah.

@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "t04&#45;01",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "979-8700048361\r\n35.98\r\n1\r\n978-0439708180\r\n14.15\r\n3\r\n979-8700048361\r\n35.98\r\n-1\r\n978-0439708180\r\n14.15\r\n4\r\n---\r\n",
+      "output": "97.07\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;02",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\n50.19\r\n3\r\n978-0593238295\r\n22.11\r\n2\r\n978-0130895929\r\n50.19\r\n10\r\n978-0439708180\r\n14.15\r\n4\r\n978-0593238295\r\n22.11\r\n2\r\n978-0593238295\r\n22.11\r\n3\r\n978-0439708180\r\n14.15\r\n-4\r\n---\r\n",
+      "output": "771.52\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;03",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "979-8700048361\r\n35.98\r\n1\r\n978-0439708180\r\n14.15\r\n6\r\n979-8700048361\r\n35.98\r\n4\r\n978-0439708180\r\n14.15\r\n4\r\n---\r\n",
+      "output": "310.73\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;04",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\n50.19\r\n3\r\n978-0593238295\r\n22.11\r\n2\r\n978-0130895929\r\n50.19\r\n1\r\n978-0439708180\r\n14.15\r\n4\r\n978-0593238295\r\n22.11\r\n2\r\n978-0593238295\r\n22.11\r\n3\r\n978-0439708180\r\n14.15\r\n14\r\n---\r\n",
+      "output": "594.40\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;05",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\n50.19\r\n0\r\n---\r\n",
+      "output": "0.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
