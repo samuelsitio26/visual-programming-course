@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-01 11:09:29 AM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMy0xMC0wMTsxMDoyNzo1NSBBTTszNjc5"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMy0xMC0wMTsxMTowOToyOSBBTTsxOzM3ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="buku1, hargabuku, hargabuku2" type="Real" array="False" size=""/>
+            <declare name="totalbuku" type="Real" array="False" size=""/>
+            <input variable="buku1"/>
+            <while expression="buku1 != 0">
+                <input variable="hargabuku"/>
+                <assign variable="totalbuku" expression="buku1 + hargabuku"/>
+                <while expression="banyakbuku != 0">
+                    <input variable="hargabuku2"/>
+                </while>
+                <assign variable="totalbuku" expression="buku1 + hargabuku"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
