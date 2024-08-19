@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 11:10:55 AM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0wOS0wODsxMDo0Mjo0NSBBTTszNjg5"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0wOS0wODsxMToxMDo1NSBBTTsyOzM3OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="z" type="Integer" array="False" size=""/>
+            <declare name="S" type="Integer" array="False" size=""/>
+            <input variable="X"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <if expression="x&lt;y">
+                <then>
+                    <assign variable="s" expression="x"/>
+                </then>
+                <else>
+                    <assign variable="s" expression="y"/>
+                </else>
+            </if>
+            <if expression="z&lt;s">
+                <then>
+                    <assign variable="s" expression="z"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

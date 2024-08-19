@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "t03&#45;01",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "979-8700048361\r\nThe Science of Self-Control\r\nMenno Henselmans\r\n2021\r\n---\r\nno\r\n35.98\r\n-14.11\r\n41\r\n5.0\r\n978-0439708180\r\nHarry Potter and the Sorcerer's Stone\r\nJ.K. Rowling\r\n1998\r\nScholastic\r\nno\r\n14.15\r\n-9.55\r\n16\r\n4.8\r\n---\r\n",
+      "output": "979-8700048361|The Science of Self-Control|Menno Henselmans|2021|---|no|35.98|-14.11|41|5.0|Best Pick|Never come twice|---\r\n978-0439708180|Harry Potter and the Sorcerer's Stone|J.K. Rowling|1998|Scholastic|no|14.15|-9.55|16|4.8|Best Pick|Once in a lifetime|The ultimate best\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t03&#45;02",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\nC: A Reference Manual\r\nSamuel Harbison, Guy Steele Jr.\r\n2002\r\nPearson\r\nno\r\n50.19\r\n-31.05\r\n21\r\n4.7\r\n978-0593238295\r\nAI 2041: Ten Visions for Our Future\r\nKai-Fu Lee, Chen Qiufan\r\n2021\r\nCurrency\r\nno\r\n25.49\r\n-13.01\r\n11\r\n4.9\r\n---\r\n",
+      "output": "978-0130895929|C: A Reference Manual|Samuel Harbison, Guy Steele Jr.|2002|Pearson|no|50.19|-31.05|21|4.7|Best Pick|Once in a lifetime|The ultimate best\r\n978-0593238295|AI 2041: Ten Visions for Our Future|Kai-Fu Lee, Chen Qiufan|2021|Currency|no|25.49|-13.01|11|4.9|Best Pick|Once in a lifetime|The ultimate best\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t03&#45;03",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0439708180\r\nHarry Potter and the Sorcerer's Stone\r\nJ.K. Rowling\r\n1998\r\nScholastic\r\nno\r\n14.15\r\n-9.55\r\n16\r\n4.8\r\n979-8700048361\r\nThe Science of Self-Control\r\nMenno Henselmans\r\n2021\r\n---\r\nno\r\n35.98\r\n-14.11\r\n41\r\n5.0\r\n978-0439708180\r\nHarry Potter and the Sorcerer's Stone\r\nJ.K. Rowling\r\n1998\r\nScholastic\r\nno\r\n14.15\r\n-9.55\r\n16\r\n4.8\r\n---\r\n",
+      "output": "978-0439708180|Harry Potter and the Sorcerer's Stone|J.K. Rowling|1998|Scholastic|no|14.15|-9.55|16|4.8|Best Pick|Once in a lifetime|The ultimate best\r\n979-8700048361|The Science of Self-Control|Menno Henselmans|2021|---|no|35.98|-14.11|41|5.0|Best Pick|Never come twice|---\r\n978-0439708180|Harry Potter and the Sorcerer's Stone|J.K. Rowling|1998|Scholastic|no|14.15|-9.55|16|4.8|Best Pick|Once in a lifetime|The ultimate best \r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t03&#45;04",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\nC: A Reference Manual\r\nSamuel Harbison, Guy Steele Jr.\r\n2002\r\nPearson\r\nno\r\n50.19\r\n-31.05\r\n21\r\n4.7\r\n978-0593238295\r\nAI 2041: Ten Visions for Our Future\r\nKai-Fu Lee, Chen Qiufan\r\n2021\r\nCurrency\r\nno\r\n25.49\r\n-13.01\r\n11\r\n4.9\r\n978-0593238295\r\nAI 2041: Ten Visions for Our Future\r\nKai-Fu Lee, Chen Qiufan\r\n2021\r\nCurrency\r\nno\r\n25.49\r\n3.01\r\n11\r\n3.0\r\n---\r\n",
+      "output": "978-0130895929|C: A Reference Manual|Samuel Harbison, Guy Steele Jr.|2002|Pearson|no|50.19|-31.05|21|4.7|Best Pick|Once in a lifetime|The ultimate best\r\n978-0593238295|AI 2041: Ten Visions for Our Future|Kai-Fu Lee, Chen Qiufan|2021|Currency|no|25.49|-13.01|11|4.9|Best Pick|Once in a lifetime|The ultimate best\r\n978-0593238295|AI 2041: Ten Visions for Our Future|Kai-Fu Lee, Chen Qiufan|2021|Currency|no|25.49|3.01|11|3.0|Average|---|---\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t03&#45;05",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0000000000\r\nNo Fact\r\nWiro Sableng\r\n2009\r\n---\r\nyes\r\n5.55\r\n-1.11\r\n0\r\n2.9\r\n---\r\n",
+      "output": "978-0000000000|No Fact|Wiro Sableng|2009|---|yes|5.55|-1.11|0|2.9|Low|No regret|---\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}

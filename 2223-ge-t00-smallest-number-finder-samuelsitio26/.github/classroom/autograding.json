@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "test&#45;t00&#45;01",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "4\r\n5\r\n2\r\n",
+      "output": "2\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t00&#45;02",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "3\r\n7\r\n4\r\n",
+      "output": "3\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t00&#45;03",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "3\r\n1\r\n4\r\n",
+      "output": "1\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t00&#45;04",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "7\r\n5\r\n2\r\n",
+      "output": "2\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t00&#45;05",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "3\r\n4\r\n4\r\n",
+      "output": "3\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}

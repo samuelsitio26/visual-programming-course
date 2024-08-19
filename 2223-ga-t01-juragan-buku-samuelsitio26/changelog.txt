@@ -1,0 +1,4 @@
+Kami telah menyelesaikan tugas.
+Kami menyelesaikan masalah di bidang input dan output.
+Kami menemukan solusi untuk pembatas "pipe".
+Kami mengulang kasus dan menyelesaikannya.

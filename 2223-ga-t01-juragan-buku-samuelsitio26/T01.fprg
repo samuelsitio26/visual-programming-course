@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-22 10:52:53 PM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0wOS0yMjswNDo0OToxMiBQTTszNzA0"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0wOS0yMjsxMDo1Mjo1MyBQTTs2OzM4MTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+        
+            <declare name="kodeisbn" type="String" array="False" size=""/>
+            <declare name="judul" type="String" array="False" size=""/>
+            <declare name="penulis" type="String" array="False" size=""/>
+            <declare name="tahunterbit" type="String" array="False" size=""/>
+            <declare name="penerbit" type="String" array="False" size=""/>
+            <declare name="formatbuku" type="String" array="False" size=""/>
+            <declare name="hargapembelian" type="Real" array="False" size=""/>
+            <declare name="minmargin" type="Real" array="False" size=""/>
+            <declare name="stok" type="Integer" array="False" size=""/>
+            <declare name="rating" type="Real" array="False" size=""/>
+            <input variable="kodeisbn"/>
+            <input variable="judul"/>
+            <input variable="penulis"/>
+            <input variable="tahunterbit"/>
+            <input variable="penerbit"/>
+            <input variable="formatbuku"/>
+            <input variable="hargapembelian"/>
+            <input variable="minmargin"/>
+            <input variable="stok"/>
+            <input variable="rating"/>
+            <output expression="kodeisbn&amp;&quot;|&quot;&amp;judul&amp;&quot;|&quot;&amp;penulis&amp;&quot;|&quot;&amp;tahunterbit&amp;&quot;|&quot;&amp;penerbit&amp;&quot;|&quot;&amp;formatbuku&amp;&quot;|&quot;&amp;hargapembelian&amp;&quot;|&quot;&amp;minmargin&amp;&quot;|&quot;&amp; stok&amp;&quot;|&quot;&amp;rating" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

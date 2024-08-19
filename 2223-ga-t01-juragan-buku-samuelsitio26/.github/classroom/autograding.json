@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "test&#45;t01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0201498400\r\nData Structures and Algorithm Analysis in C\r\nMark Allen Weiss\r\n1996\r\nPearson\r\nyes\r\n84.21\r\n20.12\r\n0\r\n4.6\r\n",
+      "output": "978-0201498400|Data Structures and Algorithm Analysis in C|Mark Allen Weiss|1996|Pearson|yes|84.21|20.12|0|4.6\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0130895929\r\nC: A Reference Manual\r\nSamuel Harbison, Guy Steele Jr.\r\n2002\r\nPearson\r\nno\r\n50.19\r\n11.05\r\n21\r\n4.1\r\n",
+      "output": "978-0130895929|C: A Reference Manual|Samuel Harbison, Guy Steele Jr.|2002|Pearson|no|50.19|11.05|21|4.1\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t01&#45;03",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-0439708180\r\nHarry Potter and the Sorcerer's Stone\r\nJ.K. Rowling\r\n1998\r\nScholastic\r\nno\r\n14.15\r\n9.55\r\n16\r\n4.8\r\n",
+      "output": "978-0439708180|Harry Potter and the Sorcerer's Stone|J.K. Rowling|1998|Scholastic|no|14.15|9.55|16|4.8\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t01&#45;04",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-9332573901\r\nComputer Systems: A Programmer's Perspective\r\nDavid R. O'Hallaron, Randal E. Bryant\r\n2016\r\nPearson\r\nyes\r\n80.45\r\n10.05\r\n0\r\n4.3\r\n",
+      "output": "978-9332573901|Computer Systems: A Programmer's Perspective|David R. O'Hallaron, Randal E. Bryant|2016|Pearson|yes|80.45|10.05|0|4.3\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test&#45;t01&#45;05",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "978-1780173641\r\nComputational Thinking: A beginner's guide to problem-solving and programming\r\nKarl Beecher\r\n2017\r\nBCS\r\nyes\r\n27.49\r\n2.14\r\n0\r\n4.4\r\n",
+      "output": "978-1780173641|Computational Thinking: A beginner's guide to problem-solving and programming|Karl Beecher|2017|BCS|yes|27.49|2.14|0|4.4\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
