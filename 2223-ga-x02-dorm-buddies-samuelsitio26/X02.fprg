@@ -1,0 +1,32 @@
+
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-12 03:18:54 PM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0xMjsxMDoxMjo1MCBBTTszNjcx"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0xMjsxMDo0NDo0NiBBTTszO3dhbGtlcnZhbGVudGludXM7TEFQVE9QLTBBUFRRODdEOzIwMjEtMTAtMDY7MTI6Mjg6MzAgUE07VDAzLmZwcmc7ODYzMA=="/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0xMi0xMjswMzoxODo1NCBQTTs2OzM4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data" type="String" array="True" size="4"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <for variable="n" start="0" end="3" direction="inc" step="1">
+                <assign variable="data[n]" expression="&quot;&quot;"/>
+                <input variable="data[n]"/>
+                <if expression="data[n]!=&quot;---&quot;">
+                    <then>
+                        <output expression="data[n]" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="n" expression="4"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

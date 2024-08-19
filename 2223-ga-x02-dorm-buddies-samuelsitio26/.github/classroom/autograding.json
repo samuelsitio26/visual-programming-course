@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "x02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "Ucok\r\nWayan\r\n---\r\n",
+      "output": "Ucok\r\nWayan\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "x02&#45;02",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "Butet\r\nLilis\r\nNana\r\nYuli\r\n",
+      "output": "Butet\r\nLilis\r\nNana\r\nYuli\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "x02&#45;03",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "Butet\r\nLilis\r\nYuli\r\n---\r\n",
+      "output": "Butet\r\nLilis\r\nYuli\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "x02&#45;04",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "Ucok\r\n---\r\n",
+      "output": "Ucok\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "x02&#45;05",
+      "setup": "make compile",
+      "run": "make -s test",
+      "input": "Ucok\r\nWayan\r\nBudi\r\nWayan\r\n",
+      "output": "Ucok\r\nWayan\r\nBudi\r\nWayan\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
