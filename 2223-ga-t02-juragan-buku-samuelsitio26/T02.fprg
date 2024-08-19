@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="samueljanring"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-08 08:26:32 PM"/>
+        <attribute name="created" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMi0wOS0yOTsxMDo0MjoyNiBBTTszNjkx"/>
+        <attribute name="edited" value="c2FtdWVsamFucmluZztMQVBUT1AtNERESEhNOTY7MjAyMy0wNi0wODswODoyNjozMiBQTTs1OzM4MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="isbn" type="String" array="False" size=""/>
+            <declare name="judul" type="String" array="False" size=""/>
+            <declare name="penulis" type="String" array="False" size=""/>
+            <declare name="tahun" type="String" array="False" size=""/>
+            <declare name="penerbit" type="String" array="False" size=""/>
+            <declare name="selfPublished" type="String" array="False" size=""/>
+            <declare name="harga" type="String" array="False" size=""/>
+            <declare name="diskon" type="String" array="False" size=""/>
+            <declare name="stok" type="String" array="False" size=""/>
+            <declare name="rating" type="Real" array="False" size=""/>
+            <declare name="kualitas" type="String" array="False" size=""/>
+            <input variable="isbn"/>
+            <input variable="judul"/>
+            <input variable="penulis"/>
+            <input variable="tahun"/>
+            <input variable="penerbit"/>
+            <input variable="selfPublished"/>
+            <input variable="harga"/>
+            <input variable="diskon"/>
+            <input variable="stok"/>
+            <input variable="rating"/>
+            <if expression="rating &gt;=4.7">
+                <then>
+                    <assign variable="kualitas" expression="&quot;Best Pick&quot;"/>
+                </then>
+                <else>
+                    <if expression="rating &gt;= 4.5">
+                        <then>
+                            <assign variable="kualitas" expression="&quot;Must Read&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="rating &gt;= 4.0">
+                                <then>
+                                    <assign variable="kualitas" expression="&quot;Recommended&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="rating &gt;=3.0">
+                                        <then>
+                                            <assign variable="kualitas" expression="&quot;Average&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="kualitas" expression="&quot;Low&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="isbn &amp;&quot;|&quot;&amp; judul &amp;&quot;|&quot;&amp; penulis &amp;&quot;|&quot;&amp; tahun &amp;&quot;|&quot;&amp; penerbit &amp;&quot;|&quot;&amp; selfPublished &amp;&quot;|&quot;&amp; harga &amp;&quot;|&quot;&amp; diskon &amp;&quot;|&quot;&amp; stok &amp;&quot;|&quot;&amp; rating &amp;&quot;|&quot;&amp; kualitas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
