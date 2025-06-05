@@ -27,6 +27,7 @@ This repository provides a series of weekly programming assignments that apply *
 ---
 
 ## 🛠️ Tools and Resources
+![Flowgorithm Homepage](assets/flowgorithm-homepage.png)
 
 - **Flowgorithm** (https://flowgorithm.org)
 - Each task folder includes:
